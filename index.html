@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Alarmy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Orbitron:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Alarmy</h1>
+      <div id="clock"></div>
+      <form id="alarm-form">
+        <label for="alarm-hour">Hour:</label>
+        <input type="number" id="alarm-hour" min="1" max="12" value="12" />
+        <label for="alarm-minute">Minute:</label>
+        <input type="number" id="alarm-minute" min="0" max="59" value="0" />
+        <label for="alarm-second">Second:</label>
+        <input type="number" id="alarm-second" min="0" max="59" value="0" />
+        <label for="alarm-ampm">AM/PM:</label>
+        <select id="alarm-ampm">
+          <option value="AM">AM</option>
+          <option value="PM">PM</option>
+        </select>
+        <button type="button" id="set-alarm">Set Alarm</button>
+      </form>
+      <div class="all-alarms">
+        <ul id="alarms"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

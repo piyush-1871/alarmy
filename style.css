@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(186, 228, 216);
+}
+body {
+  background-color: black;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.title {
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+#clock {
+  color: rgb(186, 228, 216);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  margin-bottom: 10vh;
+}
+#alarm-form {
+  display: flex;
+  align-items: center;
+}
+
+#alarm-form input[type="number"] {
+  width: 5rem;
+  height: 2rem;
+  color: black;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#alarm-ampm {
+  width: 5rem;
+  height: 2rem;
+  color: black;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  font: bold;
+  text-align: center;
+  font-weight: 600;
+}
+#alarm-ampm option {
+  color: black;
+}
+
+#alarm-form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#alarm-form button {
+  margin-left: 10px;
+  width: 7rem;
+  height: 2rem;
+  color: black;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#alarms {
+  margin-top: 25px;
+}
+
+#alarms li {
+  margin-bottom: 5px;
+}
+
+#alarms li button {
+  margin-left: 10px;
+  width: 5rem;
+  color: black;
+  height: 1.5rem;
+  font-weight: 600;
+}
